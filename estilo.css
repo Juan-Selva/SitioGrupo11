@@ -1,0 +1,300 @@
+@import 'globals.css';
+
+.home {
+    max-height: 100vh;
+}
+
+.background{
+    background: url(img/volunteers-help-poor-people-charity-260nw-1716826252.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 100%;
+    max-width: 100%;
+    background-position: center top;
+    background-attachment: fixed; 
+    backdrop-filter: blur(15px);
+    
+}
+.backgroundavan{
+    background: url(img/6248cf2c4be9c.jpeg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 100%;
+    max-width: 100%;
+    background-position: center top;
+    background-attachment: fixed; 
+    backdrop-filter: blur(15px);
+}
+
+.barra{
+    background-color: #4C87A1;
+    width: 100%; 
+    padding: 1px;
+    border-radius: 20px;
+    text-align: center;
+}
+
+.menu{
+    display: flex;
+    justify-content: space-around;
+}
+
+.menuli{
+    margin: 0;
+    text-align: center;
+}
+
+.menuli a {
+  padding: 0.5rem;
+}
+
+
+.cuerpo{
+    display:flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    max-width: 100%;
+    border-radius: 5px;
+    gap: 1rem;
+}
+.acerca{
+    flex: 1;
+    display: flex;
+    flex-flow: column wrap;
+    align-items: center;
+    justify-content: center;
+    gap: 1rem;
+    text-align: center;
+    border-color: #222426;
+    border: 2px solid;
+    border-radius: 5px;
+    padding: 1rem; 
+    background: #4C87A1;
+    transition: background 150ms;
+}
+
+.acerca:hover {
+  background: white;
+}
+
+.nombre {
+  margin: 0;
+}
+
+.foto{
+    max-height: 300px;
+    max-width: 150px;
+    width: 100%;
+    border-radius: 5px;
+    flex-wrap: wrap;
+    object-fit: cover;
+    aspect-ratio: 1/1.15;
+}
+
+.imgcontainer{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+}
+.imgindex{
+  object-fit: cover;
+  height: 15%;
+  width: 8%;
+}
+@media (max-width: 576px){
+  .imgindex{
+    width: 30%;
+    height: 25%;
+  }
+}
+@media (max-width: 992px){
+  .imgindex{
+    width: 10%;
+    height: 15%;
+  }
+}
+
+
+.contenedorTituloHome{
+    font-family: arial black;
+    background-size: 100%;
+    width: 100%;
+    background-repeat: no-repeat;
+}
+
+.textoHome{
+    text-align: center;
+    color: #fff;
+    margin: 60px 0 40px 0;
+    font-size: 2.8rem;
+    width: 100%;
+    text-shadow: 3px 3px 10px #000;
+    font-size: 1.6rem;
+    flex-wrap: wrap;
+}
+
+.h2Home{
+    color: #fff;
+    font-size: 1.8rem;
+    text-align: center;
+    text-shadow: 3px 3px 10px #000;
+    flex-wrap: wrap;
+}
+.pHome{
+    text-align: center;
+    font-size: 1.8rem;
+    color: #fff;
+    text-shadow: 3px 3px 10px #000;
+    flex-wrap: wrap;
+}
+
+.pServ{
+    padding: 1rem;
+    background-color: rgba(0, 0, 0, 0.5);
+    text-align: justify;
+    font-size: 1.3rem;
+    color: #fff;
+    width: 75%;
+    max-width: 80ch;
+    margin: auto;
+}
+
+.aServ{
+    text-align:justify;
+    font-size: 1.3rem;
+    color: #fff;
+    text-shadow: 3px 3px 10px #000;
+    flex-wrap: wrap;
+    width: 75%;
+    text-decoration: underline;
+    
+}
+
+.integrantesTitle {
+  flex-grow: 1;
+  width: 100%;
+}
+
+@media (max-width: 576px){
+    .menuli{
+        font-size: 0.8rem;
+    }
+
+    .textoHome{
+        font-size: 1.9rem;
+        flex-wrap: wrap;
+        margin: 30px 0 20px 0;
+    }
+    .foto{
+      min-width: 100%;
+    }
+
+    .cuerpo {
+      justify-content: space-between;
+    }
+
+    .acerca {
+      min-width: 40%;
+      max-width: 40%;
+    }
+
+    .nombre {
+      font-size: 2rem;
+    }
+
+    .aServ{
+        font-size: 0.9rem;
+    }
+
+    .pServ{
+        width: 100%;
+        font-size: 0.9rem;
+    }
+
+    .pHome{
+        font-size: 1.2rem;
+    }
+}
+
+
+@media (max-width: 992px){
+    .menuli{
+        font-size: 0.8rem;
+    }
+    .foto{
+      max-width: 50%;
+      max-height: 250px;
+    }
+    .cuerpo {
+      justify-content: space-evenly;
+    }
+    .acerca {
+      min-width: 40%;
+      max-width: 40%;
+    }
+
+    .nombre {
+      font-size: 1.5rem;
+    }
+    .aServ{
+        font-size: 1rem;
+    }
+    .pServ{
+        font-size: 1rem;
+    }
+
+    .pHome{
+        font-size: 1.5rem;
+    }
+}
+footer {
+  display:flex;
+  justify-content: space-between;
+  align-items: center;
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+  background-color: #fff; 
+  padding: 10px; 
+  
+}
+
+.imgfooter{
+  width: 100px;
+  height: 45px;
+}
+
+.textfooter{
+  flex-grow: 1;
+  text-align: center
+}
+
+.imgcontainer1{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+}
+.imgavan{
+  object-fit: cover;
+  height: 15%;
+  width: 10%;
+}
+.imgavan1{
+  object-fit: cover;
+  height: 30%;
+  width: 35%;
+}
+@media (max-width: 576px){
+  .imgiavan{
+    width: 10%;
+    height: 10%;
+  }
+}
+@media (max-width: 992px){
+  .imgiavan{
+    width: 12%;
+    height: 15%;
+  }
+}
